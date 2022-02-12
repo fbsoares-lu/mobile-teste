@@ -10,7 +10,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import themes from './src/styles/themes';
-import { SignUp } from './src/screens/Signup';
+import { Routes } from './src/routes';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={themes}>
-      <SignUp />
+      <Routes />
     </ThemeProvider>
   );
 }

@@ -1,15 +1,31 @@
 import styled from 'styled-components/native';
+import { getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  align-items: center;
+  padding-top: ${getStatusBarHeight()+ 100}px;
+  background-color: ${({ theme }) => theme.colors.light};
 `;
 
-export const FormContainer = styled.View``;
+export const Title = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.poppins_bold};
+  font-size: 28px;
+  color: ${({ theme }) => theme.colors.secondary};
+`;
 
-export const FormInput = styled.TextInput``;
+export const SecondaryTitle = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.poppins_bold};
+  font-size: 28px;
+  color: ${({ theme }) => theme.colors.main};
+`;
 
-export const FormButton = styled.Button``;
+export const Description = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.poppins_medium};
+  font-size: 18px;
+  color: ${({ theme }) => theme.colors.text};
 
-export const TextFormButton = styled.Text``;
+  text-align: center;
+  margin-top: 40px;
+`;
+

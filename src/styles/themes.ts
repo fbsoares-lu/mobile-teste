@@ -3,8 +3,9 @@ export default {
     main: '#0D34FF',
     secondary: '#FF6B00',
 
+    errors: '#FE5858',
     main_light: '#CBD4FF',
-
+    light: '#FFFFFF',
     title: '#333333',
     text: '#7A7A7A'
   },
